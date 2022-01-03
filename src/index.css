@@ -27,9 +27,13 @@ code {
 }
 
 .calculator {
+  display: flex;
+  flex-direction: column;
   margin: 10% auto;
-  border: solid 1px red;
   width: 30%;
+}
+
+.calculator-btns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
@@ -38,6 +42,7 @@ code {
 .digits {
   padding: 20px;
   background: #e1e0e1;
+  border: solid 1px lightgray;
 }
 
 .span-2 {
@@ -47,4 +52,11 @@ code {
 
 .orange {
   background: #f4913f;
+}
+
+.output {
+  background: #858792;
+  color: white;
+  padding: 15px 5px;
+  text-align: right;
 }

@@ -11,25 +11,28 @@ class Calculator extends Component {
   render() {
     return (
       <div className="calculator">
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits', 'orange']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits', 'orange']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits', 'orange']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits', 'orange']} />
-        <Button sym="click" selector={['digits', 'span-2']} />
-        <Button sym="click" selector={['digits']} />
-        <Button sym="click" selector={['digits', 'orange']} />
+        <div className="output">10</div>
+        <div className="calculator-btns">
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits', 'orange']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits', 'orange']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits', 'orange']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits', 'orange']} />
+          <Button sym="click" selector={['digits', 'span-2']} />
+          <Button sym="click" selector={['digits']} />
+          <Button sym="click" selector={['digits', 'orange']} />
+        </div>
       </div>
     );
   }
