@@ -10,7 +10,7 @@ class Button extends Component {
   render() {
     const { selector, sym } = this.props;
     return (
-      <button type="button" className={selector}>{sym}</button>
+      <button type="button" className={selector.join(', ')}>{sym}</button>
     );
   }
 }

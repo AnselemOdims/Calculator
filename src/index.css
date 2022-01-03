@@ -25,3 +25,26 @@ code {
     'Courier New',
     monospace;
 }
+
+.calculator {
+  margin: 10% auto;
+  border: solid 1px red;
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.digits {
+  padding: 20px;
+  background: #e1e0e1;
+}
+
+.span-2 {
+  grid-column: 1 / span 2;
+  background: #e1e0e1;
+}
+
+.orange {
+  background: #f4913f;
+}

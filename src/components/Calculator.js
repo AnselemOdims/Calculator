@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Button from './Button';
+import '../index.css';
 
 class Calculator extends Component {
   constructor(props) {
@@ -10,8 +11,25 @@ class Calculator extends Component {
   render() {
     return (
       <div className="calculator">
-        Hello App
         <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits', 'orange']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits', 'orange']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits', 'orange']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits', 'orange']} />
+        <Button sym="click" selector={['digits', 'span-2']} />
+        <Button sym="click" selector={['digits']} />
+        <Button sym="click" selector={['digits', 'orange']} />
       </div>
     );
   }
