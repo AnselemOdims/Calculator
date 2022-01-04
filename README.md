@@ -2,8 +2,12 @@
 
 # Calculator
 
-> Calculator is an app built to calculate simple mathematical operations. It is built using React and CSS.
+> Calculator is a single page application built to calculate simple mathematical operations. It is built using React and CSS.
 
+
+## Mini Demo
+
+![screenshot](./src/images/calculator.png)
 
 
 Additional description about the project and its features.
@@ -22,6 +26,7 @@ Additional description about the project and its features.
   - Git(version control)
   - ESLint(JavaScript linting)
   - Stylelint(style linting)
+
   ```
 
 ## Live Demo
@@ -41,8 +46,8 @@ To get a local copy up and running follow these simple example steps.
 #### Clone this repository
 
 ```bash
-$ git clone git@github.com:AnselemOdims/MazeFlix.git
-$ cd MazeFlix
+$ git clone git@github.com:AnselemOdims/Calculator.git
+$ cd Calculator
 ```
 #### Run project
 
@@ -53,7 +58,7 @@ $ npm run start # this will make webpack watching for your changes in code
 
 #### Open page in browser
 ```bash
-$ open dist/index.html
+$ open public/index.html
 ```
 
   <br>
@@ -71,7 +76,7 @@ $ open dist/index.html
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AnselemOdims/MazeFlix/issues).
+Feel free to check the [issues page](https://github.com/AnselemOdims/Calculator/issues).
 
 <br>
 
