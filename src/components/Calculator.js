@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import Button from './Button';
 import '../index.css';
+import Row from './Row';
 
 class Calculator extends Component {
   constructor(props) {
@@ -12,27 +12,11 @@ class Calculator extends Component {
     return (
       <div className="calculator">
         <div className="output">10</div>
-        <div className="calculator-btns">
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits', 'orange']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits', 'orange']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits', 'orange']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits', 'orange']} />
-          <Button sym="click" selector={['digits', 'span-2']} />
-          <Button sym="click" selector={['digits']} />
-          <Button sym="click" selector={['digits', 'orange']} />
-        </div>
+        <Row types={['AC', '+/-', '%']} operand="&divide;" />
+        <Row types={['7', '8', '9']} operand="&times;" />
+        <Row types={['4', '5', '6']} operand="&minus;" />
+        <Row types={['1', '2', '3']} operand="+" />
+        <Row types={['0', '.', '=']} operand="" />
       </div>
     );
   }
