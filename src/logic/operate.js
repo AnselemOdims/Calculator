@@ -18,7 +18,14 @@ export default function operate(numberOne, numberTwo, operation) {
       try {
         result = one.div(two).toString();
       } catch (e) {
-        throw new Error("Can't find modulo as can't divide by 0.");
+        result = "Can't divide by 0.";
+      }
+      break;
+    case '%':
+      try {
+        result = one.mod(two).toString();
+      } catch (e) {
+        result = "Can't find modulo as can't divide by 0.";
       }
       break;
     default:
