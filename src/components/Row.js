@@ -2,10 +2,15 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
+/**
+ * @component Row - the component for each row of buttons
+ * @property {Array} types
+ * @property {String} operand
+ * @property {Function} handleBtnClick
+ */
 class Row extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
     this.handleBtnClick = this.handleBtnClick.bind(this);
   }
 

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * @component Button - the component for each button
+ * @property {Array} selector
+ * @property {String} sym
+ * @property {Function} handleBtnClick
+ */
 class Button extends Component {
   constructor(props) {
     super(props);

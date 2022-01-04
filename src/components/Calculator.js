@@ -3,6 +3,9 @@ import '../index.css';
 import Row from './Row';
 import calculate from '../logic/calculate';
 
+/**
+ * @component Calculator - the complete calculator components
+ */
 class Calculator extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +30,7 @@ class Calculator extends Component {
           {operation}
           {next}
         </div>
-        <Row types={['AC', '+/-', '%']} operand="&divide;" handleBtnClick={this.handleBtnClick} />
+        <Row types={['AC', '+/-', '%']} operand="÷" handleBtnClick={this.handleBtnClick} />
         <Row types={['7', '8', '9']} operand="x" handleBtnClick={this.handleBtnClick} />
         <Row types={['4', '5', '6']} operand="-" handleBtnClick={this.handleBtnClick} />
         <Row types={['1', '2', '3']} operand="+" handleBtnClick={this.handleBtnClick} />
