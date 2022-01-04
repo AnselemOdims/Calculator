@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /**
@@ -7,24 +6,14 @@ import PropTypes from 'prop-types';
  * @property {String} sym
  * @property {Function} handleBtnClick
  */
-class Button extends Component {
-  constructor(props) {
-    super(props);
-    this.handleBtnClick = this.handleBtnClick.bind(this);
-  }
+const Button = (props) => {
+  const { selector, sym, handleBtnClick } = props;
+  const handleClick = () => handleBtnClick(sym);
 
-  handleBtnClick() {
-    const { handleBtnClick, sym } = this.props;
-    handleBtnClick(sym);
-  }
-
-  render() {
-    const { selector, sym } = this.props;
-    return (
-      <button type="button" className={selector.join(' ')} onClick={this.handleBtnClick}>{sym}</button>
-    );
-  }
-}
+  return (
+    <button type="button" className={selector.join(' ')} onClick={handleClick}>{sym}</button>
+  );
+};
 
 Button.propTypes = {
   selector: PropTypes.arrayOf(PropTypes.string).isRequired,
