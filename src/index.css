@@ -85,7 +85,7 @@ header h3 {
 .calculator {
   display: flex;
   flex-direction: column;
-  margin: 13% auto;
+  margin: 3% auto;
   width: 48%;
 }
 
@@ -117,7 +117,7 @@ header h3 {
 .output {
   background: var(--secondary-color-1);
   color: var(--white);
-  padding: 20px 5px;
+  padding: 20px 10px;
   text-align: right;
   font-size: 1.4rem;
   font-family: var(--font-1);
@@ -125,13 +125,39 @@ header h3 {
 
 @media (max-width: 768px) {
   .calculator {
-    margin: 20% auto;
+    margin: 10% auto;
     width: 50%;
+  }
+
+  header,
+  .home {
+    padding: 20px 50px;
+    width: 100%;
   }
 }
 
 @media (max-width: 450px) {
   .calculator {
     width: 80%;
+  }
+
+  header,
+  .home {
+    padding: 20px 10px;
+    width: 100%;
+  }
+
+  header h3 {
+    font-size: 14px;
+  }
+
+  header > nav .link {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .home h1,
+  .home h2 {
+    font-size: 20px;
   }
 }

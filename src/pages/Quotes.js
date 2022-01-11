@@ -23,7 +23,7 @@ const Quotes = () => {
       <div>
         <h2 style={{ textAlign: 'center' }}>Random Mathematics Quotes</h2>
         <GiPerspectiveDiceSixFacesRandom style={{
-          marginTop: '5px', marginLeft: '10px', fontSize: '20px', color: '#a8642c',
+          marginTop: '5px', marginLeft: '10px', fontSize: '25px', color: '#a8642c',
         }}
         />
       </div>
