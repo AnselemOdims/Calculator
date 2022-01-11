@@ -5,12 +5,14 @@ import './index.css';
 import Calculator from './components/Calculator';
 import Home from './pages/Home';
 import NotMatch from './pages/NotMatch';
+import Header from './components/Header';
 
-const home = '/calculator';
+const home = '/';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path={`${home}`} element={<Home />} />
         <Route path={`${home}/calc`} element={<Calculator />} />
