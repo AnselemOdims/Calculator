@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { GiPerspectiveDiceSixFacesRandom } from 'react-icons/gi';
 
 const Quotes = () => {
   const defaultString = 'Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. - William Paul Thurston';
@@ -18,8 +19,14 @@ const Quotes = () => {
   }, [quote]);
 
   return (
-    <div>
-      <h3>Random Mathematics Quotes</h3>
+    <div className="home">
+      <div>
+        <h2 style={{ textAlign: 'center' }}>Random Mathematics Quotes</h2>
+        <GiPerspectiveDiceSixFacesRandom style={{
+          marginTop: '5px', marginLeft: '10px', fontSize: '20px', color: '#a8642c',
+        }}
+        />
+      </div>
       <p>{quote}</p>
     </div>
   );

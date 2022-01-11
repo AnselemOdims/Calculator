@@ -15,7 +15,7 @@
   --secondary-color-1: #858792;
   --secondary-color-2: #3b3b41;
   --neutral-color-1: #bdbdbc;
-  --neutral-color-2: #e1e0e1;
+  --neutral-color-2: #d8d8d8;
   --white: #fff;
   --font-1: 'Ubuntu', sans-serif;
   --shadow-1: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
@@ -77,7 +77,7 @@ header h3 {
   text-align: center;
   margin-top: 50px;
   line-height: 1.5;
-  background: var(--white);
+  background: var(--neutral-color-2);
   border-radius: 2px;
   padding: 20px 10px 40px;
 }
@@ -107,7 +107,7 @@ header h3 {
 
 .span-2 {
   grid-column: 1 / span 2;
-  background: #e1e0e1;
+  background: var(--neutral-color-2);
 }
 
 .orange {
