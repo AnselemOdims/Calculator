@@ -6,6 +6,7 @@ import Calculator from './components/Calculator';
 import Home from './pages/Home';
 import NotMatch from './pages/NotMatch';
 import Header from './components/Header';
+import Quote from './pages/Quotes';
 
 const home = '/';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path={`${home}`} element={<Home />} />
         <Route path={`${home}/calc`} element={<Calculator />} />
+        <Route path={`${home}/quote`} element={<Quote />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
     </Router>
