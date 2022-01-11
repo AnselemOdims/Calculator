@@ -1,6 +1,14 @@
+import { FaSmileWink } from 'react-icons/fa';
+
 const Home = () => (
-  <section>
-    <h1>Welcome to Math Magicians</h1>
+  <section className="home">
+    <div>
+      <h1>Welcome to Math Magicians</h1>
+      <FaSmileWink style={{
+        marginTop: '5px', marginLeft: '10px', fontSize: '20px', color: '#a8642c',
+      }}
+      />
+    </div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

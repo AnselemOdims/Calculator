@@ -62,6 +62,26 @@ header h3 {
   color: var(--secondary-color-2);
 }
 
+.home {
+  padding: 20px 200px;
+  margin: 5% auto;
+  color: var(--secondary-color-2);
+}
+
+.home > div {
+  display: flex;
+  justify-content: center;
+}
+
+.home > p {
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5;
+  background: var(--white);
+  border-radius: 2px;
+  padding: 20px 10px 40px;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
