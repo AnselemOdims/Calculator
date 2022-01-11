@@ -13,6 +13,7 @@
   --primary-color-1: #f4913f;
   --accent-color-1: #6eafab;
   --secondary-color-1: #858792;
+  --secondary-color-2: #3b3b41;
   --neutral-color-1: #bdbdbc;
   --neutral-color-2: #e1e0e1;
   --white: #fff;
@@ -40,6 +41,25 @@ ul li {
 
 a {
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background: var(--secondary-color-1);
+}
+
+header > div {
+  display: flex;
+}
+
+header > nav .link {
+  margin: 10px;
+}
+
+header h3 {
+  color: var(--secondary-color-2);
 }
 
 .calculator {
