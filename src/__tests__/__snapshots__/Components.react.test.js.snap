@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Button mounts when called 1`] = `
+exports[`Button onClick function should work properly 1`] = `
 <button
   className="digits orange"
   onClick={[Function]}
@@ -10,7 +10,7 @@ exports[`Button Button mounts when called 1`] = `
 </button>
 `;
 
-exports[`Button onClick function works properly 1`] = `
+exports[`Button should mount Button 1`] = `
 <button
   className="digits orange"
   onClick={[Function]}
@@ -20,12 +20,47 @@ exports[`Button onClick function works properly 1`] = `
 </button>
 `;
 
-exports[`Output Output display appropriately 1`] = `
+exports[`Output should mount Output 1`] = `
 <div
   className="output"
 >
   0
   +
   0
+</div>
+`;
+
+exports[`Row should mount Row 1`] = `
+<div
+  className="calculator-btns"
+>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="digits orange"
+    onClick={[Function]}
+    type="button"
+  >
+    ÷
+  </button>
 </div>
 `;
