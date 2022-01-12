@@ -8,15 +8,39 @@ import Button from './Button';
  * @property {Function} handleBtnClick
  */
 const Row = (props) => {
-  const { types: [first, second, third], operand, handleClick } = props;
+  const {
+    types: [first, second, third],
+    operand,
+    handleClick,
+  } = props;
   const handleBtnClick = (sym) => handleClick(sym);
 
   return (
     <div className="calculator-btns">
-      <Button sym={first} selector={operand === '' ? ['digits', 'span-2'] : ['digits']} handleBtnClick={handleBtnClick} />
-      <Button sym={second} selector={['digits']} handleBtnClick={handleBtnClick} />
-      <Button sym={third} selector={operand === '' ? ['digits', 'orange'] : ['digits']} handleBtnClick={handleBtnClick} />
-      { operand === '' ? '' : <Button sym={operand} selector={['digits', 'orange']} handleBtnClick={handleBtnClick} /> }
+      <Button
+        sym={first}
+        selector={operand === '' ? ['digits', 'span-2'] : ['digits']}
+        handleBtnClick={handleBtnClick}
+      />
+      <Button
+        sym={second}
+        selector={['digits']}
+        handleBtnClick={handleBtnClick}
+      />
+      <Button
+        sym={third}
+        selector={operand === '' ? ['digits', 'orange'] : ['digits']}
+        handleBtnClick={handleBtnClick}
+      />
+      {operand === '' ? (
+			  ''
+      ) : (
+        <Button
+          sym={operand}
+          selector={['digits', 'orange']}
+          handleBtnClick={handleBtnClick}
+        />
+      )}
     </div>
   );
 };
