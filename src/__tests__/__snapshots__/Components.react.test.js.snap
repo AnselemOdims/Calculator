@@ -19,3 +19,13 @@ exports[`Button onClick function works properly 1`] = `
   +
 </button>
 `;
+
+exports[`Output Output display appropriately 1`] = `
+<div
+  className="output"
+>
+  0
+  +
+  0
+</div>
+`;
