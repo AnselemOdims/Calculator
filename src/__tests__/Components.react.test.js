@@ -19,10 +19,6 @@ describe('Button', () => {
 	const button = renderer.create(
 		<Button sym={sym} handleBtnClick={handleClick} selector={selector} />
 	);
-
-	const wrapper = mount(
-		<Button sym={sym} handleBtnClick={handleClick} selector={selector} />
-	);
 	let tree = button.toJSON();
 
 	test('should mount the Button component', () => {
@@ -34,10 +30,6 @@ describe('Button', () => {
 		tree = button.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-
-	test('should be allowed to set props', () => {
-		
-	})
 });
 
 describe('Output', () => {
@@ -75,8 +67,11 @@ describe('Row', () => {
 describe('Calculator', () => {
 	test('should mount the Calculator component', () => {
 		const calculator = renderer.create(<Calculator />);
+		const wrapper = shallow(<Calculator />)
 		const tree = calculator.toJSON();
 		expect(tree).toMatchSnapshot();
+		expect(wrapper.find(Row).length).toEqual(5);
+		expect(wrapper.find(Output).length).toEqual(1);
 	});
 });
 
