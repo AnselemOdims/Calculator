@@ -10,7 +10,7 @@ exports[`Button onClick function should work properly 1`] = `
 </button>
 `;
 
-exports[`Button should mount Button 1`] = `
+exports[`Button should mount the Button component 1`] = `
 <button
   className="digits orange"
   onClick={[Function]}
@@ -20,7 +20,7 @@ exports[`Button should mount Button 1`] = `
 </button>
 `;
 
-exports[`Calculator should mount Calculator 1`] = `
+exports[`Calculator should mount the Calculator component 1`] = `
 Array [
   <div
     className="home"
@@ -223,7 +223,7 @@ Array [
 ]
 `;
 
-exports[`Output should mount Output 1`] = `
+exports[`Output should mount the Output component 1`] = `
 <div
   className="output"
 >
@@ -233,7 +233,7 @@ exports[`Output should mount Output 1`] = `
 </div>
 `;
 
-exports[`Row should mount Row 1`] = `
+exports[`Row should mount the Row component 1`] = `
 <div
   className="calculator-btns"
 >
