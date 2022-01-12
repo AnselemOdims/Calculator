@@ -3,6 +3,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import { NavLink } from 'react-router-dom';
 
 import Button from '../components/Button';
 import Output from '../components/Output';
@@ -75,10 +76,9 @@ describe('Calculator', () => {
 	});
 });
 
-// describe('Header', () => {
-//   test('should mount the Header component', () => {
-//     const header = renderer.create(<Header />);
-//     const tree = header.toJSON();
-//     expect(tree).toMatchSnapshot();
-//   })
-// })
+describe('Header', () => {
+  test('should mount the Header component', () => {
+		const wrapper = shallow(<Header/>)
+		expect(wrapper.find(NavLink).length).toEqual(3);
+  })
+})
