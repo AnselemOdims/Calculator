@@ -13,24 +13,23 @@ const Row = (props) => {
     operand,
     handleClick,
   } = props;
-  const handleBtnClick = (sym) => handleClick(sym);
 
   return (
     <div className="calculator-btns">
       <Button
         sym={first}
         selector={operand === '' ? ['digits', 'span-2'] : ['digits']}
-        handleBtnClick={handleBtnClick}
+        handleBtnClick={handleClick}
       />
       <Button
         sym={second}
         selector={['digits']}
-        handleBtnClick={handleBtnClick}
+        handleBtnClick={handleClick}
       />
       <Button
         sym={third}
         selector={operand === '' ? ['digits', 'orange'] : ['digits']}
-        handleBtnClick={handleBtnClick}
+        handleBtnClick={handleClick}
       />
       {operand === '' ? (
 			  ''
@@ -38,7 +37,7 @@ const Row = (props) => {
         <Button
           sym={operand}
           selector={['digits', 'orange']}
-          handleBtnClick={handleBtnClick}
+          handleBtnClick={handleClick}
         />
       )}
     </div>

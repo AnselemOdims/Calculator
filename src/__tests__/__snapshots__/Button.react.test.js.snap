@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button mounts when called 1`] = `
+exports[`Button Button mounts when called 1`] = `
+<button
+  className="digits orange"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`Button onClick function works properly 1`] = `
 <button
   className="digits orange"
   onClick={[Function]}
