@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import Button from '../components/Button';
 import Output from '../components/Output';
 import Row from '../components/Row';
+import Calculator from '../components/Calculator';
 
 describe('Button', () => {
 	const sym = '+';
@@ -39,15 +40,22 @@ describe('Output', () => {
 });
 
 describe('Row', () => {
-  
-  test('should mount Row', () => {
-    const types = ['AC', '+/-', '%'];
-    const operand = '÷';
-    const handleClick = () => {};
-    const row = renderer.create(
-      <Row types={types} operand={operand} handleClick={handleClick} />
-    );
-    const tree = row.toJSON();
+	test('should mount Row', () => {
+		const types = ['AC', '+/-', '%'];
+		const operand = '÷';
+		const handleClick = () => {};
+		const row = renderer.create(
+			<Row types={types} operand={operand} handleClick={handleClick} />
+		);
+		const tree = row.toJSON();
 		expect(tree).toMatchSnapshot();
+	});
+});
+
+describe('Calculator', () => {
+	test('should mount Calculator', () => {
+		const calculator = renderer.create(<Calculator />);
+    const tree = calculator.toJSON();
+    expect(tree).toMatchSnapshot();
 	});
 });

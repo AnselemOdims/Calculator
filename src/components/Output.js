@@ -8,10 +8,15 @@ const Output = ({ total, operation, next }) => (
   </div>
 );
 
+Output.defaultProps = {
+  operation: null,
+  next: null,
+};
+
 Output.propTypes = {
   total: PropTypes.string.isRequired,
-  operation: PropTypes.string.isRequired,
-  next: PropTypes.string.isRequired,
+  operation: PropTypes.string,
+  next: PropTypes.string,
 };
 
 export default Output;
