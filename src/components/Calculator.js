@@ -3,6 +3,7 @@ import '../index.css';
 import { FaLaughBeam } from 'react-icons/fa';
 import Row from './Row';
 import calculate from '../logic/calculate';
+import Output from './Output';
 
 /**
  * @component Calculator - the complete calculator components
@@ -23,11 +24,7 @@ const Calculator = () => {
         />
       </div>
       <div className="calculator">
-        <div className="output">
-          {total}
-          {operation}
-          {next}
-        </div>
+        <Output total={total} operation={operation} next={next} />
         <Row types={['AC', '+/-', '%']} operand="÷" handleClick={handleBtnClick} />
         <Row types={['7', '8', '9']} operand="x" handleClick={handleBtnClick} />
         <Row types={['4', '5', '6']} operand="-" handleClick={handleBtnClick} />
