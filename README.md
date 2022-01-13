@@ -9,6 +9,10 @@
 
 ![screenshot](./src/images/calc.gif)
 
+## Live Demo
+
+[Website Link](https://anselemodims.github.io/Calculator/)
+
 
 Additional description about the project and its features.
 
@@ -22,16 +26,14 @@ Additional description about the project and its features.
   - create-react-app tool
   - Webpack(Code Bundlng et al)
   - Babel (code transpiling)
-  - Jest(for testing)
+  - Jest(Snapshot Testing)
+  - Enzyme(User interactions Testing)
   - Git(version control)
   - ESLint(JavaScript linting)
   - Stylelint(style linting)
 
   ```
 
-## Live Demo
-
-[Website Link](https://anselemodims.github.io/Calculator/)
 
 ## Getting Started
 
