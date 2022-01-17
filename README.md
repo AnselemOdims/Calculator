@@ -9,9 +9,17 @@
 
 ![screenshot](./src/images/calc.gif)
 
-## Live Demo
+## Github Pages
 
-[Website Link](https://anselemodims.github.io/Calculator/)
+[GH-pages Link](https://anselemodims.github.io/Calculator/)
+
+## Heroku
+
+[Heroku Link](https://calm-refuge-56824.herokuapp.com/Calculator/)
+
+## Netlify
+
+[Netlify Link](https://kind-lichterman-1b8a5e.netlify.app/)
 
 
 Additional description about the project and its features.
