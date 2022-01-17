@@ -19,7 +19,7 @@
 
 ## Netlify
 
-[Netlify Link](https://kind-lichterman-1b8a5e.netlify.app/)
+[Netlify Link](https://maths-calculator.netlify.app/)
 
 
 Additional description about the project and its features.
