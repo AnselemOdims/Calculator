@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button onClick function should work properly 1`] = `
+<button
+  className="digits orange"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`Button should mount the Button component 1`] = `
+<button
+  className="digits orange"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`Calculator should mount the Calculator component 1`] = `
+Array [
+  <div
+    className="home"
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h2>
+      Try Out Some Maths
+    </h2>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "#a8642c",
+          "fontSize": "20px",
+          "marginLeft": "10px",
+          "marginTop": "5px",
+        }
+      }
+      viewBox="0 0 496 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm24 199.4c3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.7 8.6-10.8 11.9-14.9 4.5l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.2 7.4-15.8 4.1-15.1-4.5zm-160 0c3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.7 8.6-10.8 11.9-14.9 4.5l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.3 7.4-15.8 4-15.1-4.5zM398.9 306C390 377 329.4 432 256 432h-16c-73.4 0-134-55-142.9-126-1.2-9.5 6.3-18 15.9-18h270c9.6 0 17.1 8.4 15.9 18z"
+      />
+    </svg>
+  </div>,
+  <div
+    className="calculator"
+  >
+    <div
+      className="output"
+    >
+      0
+    </div>
+    <div
+      className="calculator-btns"
+    >
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="digits orange"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="calculator-btns"
+    >
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="digits orange"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="calculator-btns"
+    >
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="digits orange"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="calculator-btns"
+    >
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="digits orange"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="calculator-btns"
+    >
+      <button
+        className="digits span-2"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="digits"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="digits orange"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+      
+    </div>
+  </div>,
+]
+`;
+
+exports[`Output should mount the Output component 1`] = `
+<div
+  className="output"
+>
+  0
+  +
+  0
+</div>
+`;
+
+exports[`Row should mount the Row component 1`] = `
+<div
+  className="calculator-btns"
+>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="digits"
+    onClick={[Function]}
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="digits orange"
+    onClick={[Function]}
+    type="button"
+  >
+    ÷
+  </button>
+</div>
+`;

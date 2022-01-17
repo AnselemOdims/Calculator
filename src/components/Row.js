@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+/* eslint-disable no-mixed-spaces-and-tabs */
 import PropTypes from 'prop-types';
 import Button from './Button';
 
@@ -8,15 +10,38 @@ import Button from './Button';
  * @property {Function} handleBtnClick
  */
 const Row = (props) => {
-  const { types: [first, second, third], operand, handleClick } = props;
-  const handleBtnClick = (sym) => handleClick(sym);
+  const {
+    types: [first, second, third],
+    operand,
+    handleClick,
+  } = props;
 
   return (
     <div className="calculator-btns">
-      <Button sym={first} selector={operand === '' ? ['digits', 'span-2'] : ['digits']} handleBtnClick={handleBtnClick} />
-      <Button sym={second} selector={['digits']} handleBtnClick={handleBtnClick} />
-      <Button sym={third} selector={operand === '' ? ['digits', 'orange'] : ['digits']} handleBtnClick={handleBtnClick} />
-      { operand === '' ? '' : <Button sym={operand} selector={['digits', 'orange']} handleBtnClick={handleBtnClick} /> }
+      <Button
+        sym={first}
+        selector={operand === '' ? ['digits', 'span-2'] : ['digits']}
+        handleBtnClick={handleClick}
+      />
+      <Button
+        sym={second}
+        selector={['digits']}
+        handleBtnClick={handleClick}
+      />
+      <Button
+        sym={third}
+        selector={operand === '' ? ['digits', 'orange'] : ['digits']}
+        handleBtnClick={handleClick}
+      />
+      {operand === '' ? (
+			  ''
+      ) : (
+        <Button
+          sym={operand}
+          selector={['digits', 'orange']}
+          handleBtnClick={handleClick}
+        />
+      )}
     </div>
   );
 };
